@@ -1,0 +1,294 @@
+/*
+Color palette: https://colorpalettes.net/color-palette-4399/
+*/
+
+:root {
+  --dark-trim: #DB8C7B;
+  --light-trim: #EBD2CD;
+  --light-background: #3B887B;
+  --background: #125446;
+  --dark-background: #112221;
+}
+
+body {
+  color: white;
+  background-color: var(--background);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: auto;
+}
+
+nav {
+  width: 100%;
+  background-color: var(--dark-trim);
+  color: var(--dark-background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 3px 0;
+}
+
+
+ul {
+  padding: 0 10px;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.nav-div {
+  display: flex;
+  justify-self: end;
+}
+
+.nav-link:link {
+  color: var(--dark-background);
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  color: var(--dark-background);
+  text-decoration: none;
+}
+
+.nav-link:hover, .nav-link:active {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-head {
+  justify-self: start;
+  padding-right: 2px;
+}
+
+.nav-item {
+  padding: 0 5px;
+  font-weight: 700;
+}
+
+.nav-1 {
+  grid-column: 1 / 2;
+}
+
+.nav-2 {
+  grid-column: 2 / 3;
+}
+
+.nav-3 {
+  grid-column: 3 / 4;
+}
+
+.nav-4 {
+  grid-column: 4 / 5;
+}
+
+.nav-5 {
+  grid-column: 5 / 6;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: var(--background);
+}
+
+.welcome-text {
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+h1 {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 500;
+  width: 80%;
+}
+
+.subtitle {
+  padding-bottom: 5px;
+}
+
+.hr-1 {
+  width: 80%;
+  position: absolute;
+  height: 5px;
+  background-color: var(--dark-trim);
+  border: none;
+}
+
+.projects-section {
+  background-color: var(--light-background)
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-img {
+  width: 100%;
+  aspect-ratio: maintain;
+  border-radius: 20px 20px 0 0;
+}
+
+.project {
+  width: 40%;
+  background-color: var(--dark-background);
+  border-radius: 20px;
+  padding: 0;
+  transition: transform 0.25s ease-in-out 0ms;
+  margin: 15px 20px 70px 20px;
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+.project-caption {
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  font-weight: 500;
+}
+
+.project-link:link {
+  color: white;
+  text-decoration: none;
+}
+
+.project-link:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.project-link:hover, .nav-link:active {
+  color: white;
+  text-decoration: none;
+}
+
+#connect {
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.hr-2 {
+  width: 80%;
+  height: 5px;
+  background-color: var(--dark-trim);
+  border: none;
+}
+
+.connect-h2 {
+  position: relative;
+  top: 18%;
+  left: 30%;
+  width: 27%;
+  
+}
+
+.headshot {
+  border-radius: 50%;
+  width: 220px;
+  position: relative;
+  top: 0;
+  left: 60%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  top: 10%;
+  left: 25%;
+}
+
+i {
+  margin: 0 5px;
+}
+
+.fa-github {
+  padding: 11px;
+  font-size: 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  background-color: #333;
+  color: white;
+} 
+
+.fa-square-envelope {
+  font-size: 91px;
+  width: 79px;
+  border-radius: 50%;
+}
+
+.fa-linkedin-in {
+  padding: 20px;
+  font-size: 45px;
+  width: 45px;
+  border-radius: 10px;
+  text-align: center;
+  background: #0077B5;
+  color: white;
+}
+
+.social-icon {
+  transition: transform 0.25s ease-in-out 0ms;
+}
+
+.social-icon:link {
+  color: white;
+}
+
+.social-icon:visited {
+  color: white;
+}
+
+.social-icon:hover, .nav-link:active {
+  animation: social-icon 0.4s ease-out;
+}
+
+@keyframes social-icon {
+  50% {
+    transform: translateY(1rem);
+  }
+}
+
+.copyright {
+  position: relative;
+  top: 33%;
+  left: 5%;
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 625px) {
+  .project {
+    width: 80%;
+  }
+  .project:hover {
+    transform: scale(1.03);
+  }
+}
